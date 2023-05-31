@@ -7,7 +7,7 @@ _You need to have [Android Studio]() instaled in your developer envirioment._ <b
 
 ## First step
 
-In the first step, you need create a file Class where you'll references your instance, for example:
+In the first step, you need to create a file Class where you'll references your instance, for example:
 
 _In this case I'll use a example of add cities. But you are free to create what you want._
 <br>
