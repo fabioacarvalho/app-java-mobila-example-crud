@@ -2,14 +2,14 @@
 
 ## Start here
 
-_You need have [Android Studio]() instaled in your developer envirioment._ <br>
+_You need to have [Android Studio]() instaled in your developer envirioment._ <br>
 
 
 ## First step
 
 In the first step, you need create a file Class where you'll references your instance, for example:
 
-_In this case I'll use a example of add cities. But you are free to create waht you want._
+_In this case I'll use a example of add cities. But you are free to create what you want._
 <br>
 
 ```
@@ -97,7 +97,7 @@ public class CityDatabase extends SQLiteOpenHelper {
 > Name file: CityDatabase.java
 <br>
 
-- __CREATE Mehtod__:
+- __CREATE Method__:
 
 ```
     public long createCityInDB(City c){
@@ -114,7 +114,7 @@ public class CityDatabase extends SQLiteOpenHelper {
 
 <br>
 
-- __GET Mehtod__:
+- __GET Method__:
 
 ```
  public ArrayList<City> getCitiesFromDB(){
@@ -144,7 +144,7 @@ public class CityDatabase extends SQLiteOpenHelper {
 ```
 <br>
 
-- __UPDATE Mehtod__:
+- __UPDATE Method__:
 
 ```
 public int updateCityInDB(City c){
@@ -162,7 +162,7 @@ public int updateCityInDB(City c){
 ```
 <br>
 
-- __DELETE Mehtod__:
+- __DELETE Method__:
 
 ```
 public int removeCityInDB(City c){
