@@ -175,3 +175,38 @@ public int removeCityInDB(City c){
 ```
 <br>
 
+## Third step
+
+Now we'll load ours data in the listView.
+
+Into MainActivity.class in the method onCreate we can create the following code:
+
+```
+public class MainActivity extends AppCompatActivity {
+    ListView listView;
+    ArrayList<String> items = new ArrayList<>();
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        listView = findViewById(R.id.listView);
+
+        loadListFromDB();
+
+    }
+
+    void loadListFromDB(){
+        CityDatabase database = new CityDatabase(MainActivity.this);
+        ArrayList<City> cities = database.getCitiesFromDB();
+        for (City c:cities){
+            items.add(c.id + "- " + c.name);
+            c.print();
+        }
+    }
+}
+```
+<br>
+
+The method `loadListFromDB` will load ours data and add in the listView, but before you need create a listView in your `file.xml`.
