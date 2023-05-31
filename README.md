@@ -143,6 +143,7 @@ public class CityDatabase extends SQLiteOpenHelper {
 
 ```
 <br>
+
 - __UPDATE Mehtod__:
 
 ```
